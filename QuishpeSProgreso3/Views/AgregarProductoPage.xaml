@@ -4,6 +4,10 @@
              x:Class="QuishpeSProgreso3.Views.AgregarProductoPage"
              Title="AgregarProductoPage">
     <VerticalStackLayout Padding="20">
+        <Label
+            Text="Stheeven Quishpe"/>
+        <Label
+            Text="12/07/2004"/>
         <Entry Placeholder="Producto" Text="{Binding Nombre}" />
         <Entry Placeholder="Categoría" Text="{Binding Categoria}" />
         <Entry Placeholder="Cantidad" Keyboard="Numeric" Text="{Binding Cantidad}" />
