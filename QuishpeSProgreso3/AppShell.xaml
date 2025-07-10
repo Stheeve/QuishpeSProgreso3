@@ -4,12 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:QuishpeSProgreso3"
+    xmlns:views="clr-namespace:QuishpeSProgreso3.Views"
+    
     Shell.FlyoutBehavior="Flyout"
     Title="QuishpeSProgreso3">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="Agregar" ContentTemplate="{DataTemplate views:AgregarProductoPage}" />
+        <ShellContent Title="Lista" ContentTemplate="{DataTemplate views:ListaProductoPage}" />
+        <ShellContent Title="Logs" ContentTemplate="{DataTemplate views:LogsPage}" />
+    </TabBar>
 
 </Shell>
